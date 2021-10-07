@@ -31,7 +31,7 @@ const pizzaController = {
     // createPizza
     createPizza({ body }, res) {
         Pizza.create(body)
-            .then(dbPizza => res.json(dbPizzaData))
+            .then(dbPizzaData => res.json(dbPizzaData))
             .catch(err => res.json(dbPizzaData))
     }, 
 
